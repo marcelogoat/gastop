@@ -1,7 +1,4 @@
 {
-  "framework": null,
-  "buildCommand": "npm run build",
-  "outputDirectory": "public",
   "rewrites": [
     { "source": "/", "destination": "/distribuidora/" },
     { "source": "/distribuidora", "destination": "/distribuidora/" }

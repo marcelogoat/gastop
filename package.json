@@ -1,11 +1,4 @@
 {
-  "name": "gas-silva",
-  "private": true,
-  "description": "Loja Gás Silva + PIX BlackCat na Vercel",
-  "scripts": {
-    "build": "node scripts/vercel-build.js"
-  },
-  "engines": {
-    "node": "20.x"
-  }
+  "name": "gastop",
+  "private": true
 }
