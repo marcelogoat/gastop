@@ -1,0 +1,12 @@
+.env
+.env.local
+.env*.local
+.vercel
+__pycache__/
+node_modules/
+hts-cache/
+hts-log.txt
+delivery-brasil.netlify.app/
+backblue.gif
+fade.gif
+

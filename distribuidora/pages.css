@@ -1,0 +1,93 @@
+/* Páginas institucionais + rodapé do site */
+:root{
+  --gs-blue:#0b3d91;
+  --gs-blue2:#0d4cb5;
+  --gs-ink:#122033;
+  --gs-muted:#5b6b7c;
+  --gs-line:#e6ebf2;
+  --gs-bg:#f6f8fb;
+  --gs-card:#fff;
+}
+.gs-top{
+  background:#fff;
+  border-bottom:1px solid var(--gs-line);
+  position:sticky;top:0;z-index:20;
+}
+.gs-top-inner{
+  max-width:1080px;margin:0 auto;padding:12px 20px;
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+}
+.gs-brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--gs-ink)}
+.gs-brand img{width:40px;height:40px;border-radius:10px;object-fit:cover;border:1px solid var(--gs-line)}
+.gs-brand b{font-size:16px;letter-spacing:-.2px}
+.gs-brand span{display:block;font-size:11px;color:var(--gs-muted);font-weight:500}
+.gs-nav{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;justify-content:flex-end}
+.gs-nav a{font-size:13px;font-weight:600;color:var(--gs-muted);text-decoration:none}
+.gs-nav a:hover,.gs-nav a.on{color:var(--gs-blue)}
+.gs-cta{
+  background:var(--gs-blue);color:#fff !important;padding:8px 14px;border-radius:999px;font-weight:700 !important;
+}
+.gs-page{max-width:860px;margin:0 auto;padding:36px 20px 20px}
+.gs-kicker{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--gs-blue);margin-bottom:8px}
+.gs-page h1{font-size:clamp(28px,5vw,40px);line-height:1.15;letter-spacing:-.8px;margin-bottom:12px}
+.gs-lead{font-size:18px;line-height:1.55;color:var(--gs-muted);margin-bottom:28px}
+.gs-page h2{font-size:22px;margin:32px 0 10px;letter-spacing:-.3px}
+.gs-page h3{font-size:17px;margin:22px 0 8px}
+.gs-page p,.gs-page li{font-size:16px;line-height:1.7;color:#2a3a4d}
+.gs-page ul,.gs-page ol{padding-left:20px;margin:8px 0 16px}
+.gs-page li{margin:6px 0}
+.gs-card{
+  background:var(--gs-card);border:1px solid var(--gs-line);border-radius:16px;padding:18px 20px;margin:16px 0;
+}
+.gs-grid{display:grid;gap:12px;grid-template-columns:1fr;margin:18px 0}
+@media(min-width:700px){.gs-grid.two{grid-template-columns:1fr 1fr}}
+.gs-hero-band{
+  background:linear-gradient(160deg,#0b3d91,#1565c0);
+  color:#fff;padding:48px 20px 40px;
+}
+.gs-hero-band-inner{max-width:860px;margin:0 auto}
+@media(min-width:900px){
+  .gs-hero-band{padding:64px 28px 52px}
+  .gs-hero-band-inner,.gs-page{max-width:960px}
+  .gs-top-inner{max-width:1120px;padding:14px 28px}
+}
+.gs-hero-band h1{color:#fff;font-size:clamp(30px,5vw,44px);letter-spacing:-.9px;margin:8px 0 12px}
+.gs-hero-band p{color:rgba(255,255,255,.86);font-size:18px;line-height:1.55;max-width:640px}
+.gs-hero-meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.gs-chip{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);color:#fff;padding:6px 12px;border-radius:999px;font-size:12px;font-weight:700}
+.gs-map{width:100%;height:240px;border:0;border-radius:16px;margin:12px 0 8px;overflow:hidden;background:#dce8d8}
+.gs-map .entrega-map-wrap,.gs-map .entrega-map-tiles,.gs-map .entrega-map-loading,.gs-map .entrega-map-fallback{min-height:240px;height:240px}
+.gs-note{font-size:13px;color:var(--gs-muted);background:#eef3fb;border-radius:12px;padding:12px 14px;margin:16px 0}
+.gs-btns{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0}
+.gs-btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  background:var(--gs-blue);color:#fff;text-decoration:none;font-weight:700;
+  padding:12px 18px;border-radius:12px;font-size:15px;
+}
+.gs-btn.ghost{background:#fff;color:var(--gs-blue);border:1.5px solid #c9d7ee}
+
+.gs-foot{
+  background:#0e1a2b;color:#c9d3e0;padding:36px 20px 28px;margin-top:28px;
+  font-size:13px;line-height:1.55;
+}
+.gs-foot a{color:#dbe7f8;text-decoration:none}
+.gs-foot a:hover{text-decoration:underline}
+.gs-foot-grid{
+  max-width:1080px;margin:0 auto 22px;
+  display:grid;gap:22px;
+  grid-template-columns:1fr;
+}
+@media(min-width:800px){
+  .gs-foot-grid{grid-template-columns:1.4fr .8fr .8fr .8fr}
+}
+.gs-foot-logo{color:#fff;font-size:18px;font-weight:800;margin-bottom:8px}
+.gs-foot h4{color:#fff;font-size:12px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px}
+.gs-foot nav{display:flex;flex-direction:column;gap:7px}
+.gs-foot-legal{
+  max-width:1080px;margin:0 auto;padding-top:18px;border-top:1px solid rgba(255,255,255,.1);
+  font-size:12px;color:#9aabc0;
+}
+.gs-foot-legal strong{color:#e8eef6;font-weight:700}
+body.gs-legal{background:var(--gs-bg);color:var(--gs-ink);font-family:'DM Sans',system-ui,sans-serif;margin:0}
+body.gs-legal a{color:var(--gs-blue)}
+.updated{font-size:12px;color:var(--gs-muted);margin-top:24px}
