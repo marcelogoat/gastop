@@ -1,13 +1,10 @@
 .env
 .env.*
 !.env.example
-.vercel
-.git
 hts-cache
 hts-log.txt
 __pycache__
 server.py
-node_modules
 delivery-brasil.netlify.app
 backblue.gif
 fade.gif

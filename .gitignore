@@ -4,6 +4,7 @@
 .vercel
 __pycache__/
 node_modules/
+public/
 hts-cache/
 hts-log.txt
 delivery-brasil.netlify.app/
