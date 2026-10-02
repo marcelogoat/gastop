@@ -11,7 +11,7 @@ from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-STATIC = ROOT
+STATIC = ROOT / "public"
 ENV_PATH = ROOT / ".env"
 
 

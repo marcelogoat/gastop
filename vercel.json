@@ -1,6 +1,3 @@
 {
-  "rewrites": [
-    { "source": "/", "destination": "/distribuidora/" },
-    { "source": "/distribuidora", "destination": "/distribuidora/" }
-  ]
+  "framework": "nextjs"
 }
